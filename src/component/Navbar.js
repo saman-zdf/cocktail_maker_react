@@ -1,23 +1,16 @@
 import React from 'react';
 
 const Navbar = () => {
+  const navbar = {
+    height: '60px',
+    backgroundColor: '#1c68ff',
+    color: '#fff',
+    padding: "20px",
+    textAlign: 'center',
+  };
   return (
-    <nav className='navbar'>
-      <div className='logo-container'>
-        <h2>CocktailMaker</h2>
-      </div>
-      <ul className='nav-items'>
-        <li>
-          <a href='/' className='nav-link'>
-            Search Drink By Name
-          </a>
-        </li>
-        <li>
-          <a href='/' className='nav-link'>
-            Search Drink By Ingredients
-          </a>
-        </li>
-      </ul>
+    <nav style={navbar}>
+      <h1>CocktailMaker</h1>
     </nav>
   );
 };

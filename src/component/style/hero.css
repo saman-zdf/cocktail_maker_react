@@ -1,0 +1,17 @@
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url('../../images/drink.jpg') center center/cover no-repeat;
+  height: 80vh;
+  margin-top: -20px;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero h2 {
+  max-width: 400px;
+  padding: 20px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
