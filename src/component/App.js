@@ -1,14 +1,26 @@
-import '../component/style/App.css';
 import Navbar from './Navbar';
-import Hero from './Hero';
+import { Route, Switch } from 'react-router-dom';
+import HomePage from './HomePage';
+import RandomDrink from './RandomDrink';
+import SearchDrink from './SearchDrink';
 
-function App() {
+const App = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Switch>
+        <Route exact path='/'>
+          <HomePage />
+        </Route>
+        <Route path='/random'>
+          <RandomDrink />
+        </Route>
+        <Route path='/search'>
+          <SearchDrink />
+        </Route>
+      </Switch>
     </>
   );
-}
+};
 
 export default App;

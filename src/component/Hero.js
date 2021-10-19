@@ -1,9 +1,10 @@
 import React from 'react';
 import './style/hero.css';
+
 const Hero = () => {
   return (
     <section className='hero'>
-      <h2>You can make your drink by searching in list of our Cocktails</h2>
+      <h1>You can make your own drink by searching in list of our Cocktails</h1>
     </section>
   );
 };

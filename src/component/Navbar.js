@@ -1,17 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Header } from './Style';
 
 const Navbar = () => {
-  const navbar = {
-    height: '60px',
-    backgroundColor: '#1c68ff',
-    color: '#fff',
-    padding: "20px",
-    textAlign: 'center',
-  };
   return (
-    <nav style={navbar}>
-      <h1>CocktailMaker</h1>
-    </nav>
+    <Header>
+      {/* navabar needs a style */}
+      <div className='logo'>
+        <Link to='/'>
+          <h1>CocktailMaster</h1>
+        </Link>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/random'>Random Drink</Link>
+          </li>
+          <li>
+            <Link to='/search'>Search Drink</Link>
+          </li>
+        </ul>
+      </nav>
+    </Header>
   );
 };
 
