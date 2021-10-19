@@ -54,7 +54,7 @@ nav ul li a {
   padding: 1rem 1.4rem;
 }
 .drink-container {
-  width: 100%;
+  width: 1170px;
   padding: 2rem;
   display: grid;
   place-items: center;
@@ -64,8 +64,9 @@ nav ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   margin: 0.5rem auto;
+  padding: 1rem;
 }
 .drink-info {
   max-width: 500px;
@@ -80,13 +81,37 @@ nav ul li a {
   margin-top: -5px;
 }
 
-.drink-info ul {
-  list-style-type: none;
-  font-size: 1rem;
-}
 .img {
   width: 500px;
   height: 500px;
-  background-color: blue;
+  background-color: #1c68ff;
   border-radius: 10px;
+  object-fit: cover;
+}
+.form-container {
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.form-container form input {
+  padding: 1rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+.form-container form input[type='text'] {
+  width: 400px;
+  border-bottom: 1px solid #999;
+}
+.form-container form input[type='submit'] {
+  background-color: #1c68ff;
+  color: #fff;
+  cursor: pointer;
+}
+.form-container form input[type='text']:focus {
+  outline: 0;
 }

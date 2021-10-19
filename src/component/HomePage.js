@@ -9,7 +9,7 @@ const HomePage = () => {
 
   const [drinks, setDrinks] = useState([]);
   const [letters, setLetters] = useState(alphabet);
-  const [letter, setLetter] = useState('');
+  const [letter, setLetter] = useState('a');
 
   async function fetchDrinks() {
     const res = await fetch(
